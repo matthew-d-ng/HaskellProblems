@@ -46,3 +46,7 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - HaskellProblems
+    - HUnit
+    - test-framework
+    - test-framework-hunit
+    - test-framework-quickcheck2

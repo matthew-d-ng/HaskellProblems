@@ -1,6 +1,9 @@
 module Lib
-    ( someFunc
+    ( myLast
     ) where
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+myLast :: [a] -> Maybe a
+myLast []       =   Nothing
+myLast (x:[])   =   Just x
+myLast (_:xs)   =   myLast xs
+
